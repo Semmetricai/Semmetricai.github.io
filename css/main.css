@@ -5,6 +5,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+body{
+    /* background-color: #f5f3f5; */
+}
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -92,35 +95,34 @@
     margin: 5px 0 ;
 }
 .home .home-content .text-3 span{
-    color: #274690;
+    /* color: #274690; */
+    color: orange;
+    /* color: #576CA8; */
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: #1B264F;
-    color: #fff;
+    background: none;
+    color: #274690;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #274690;
+    
+    border: 2px solid #1B264F;
     transition: all 0.3s ease;
 
 }
 .home .home-content a:hover{
-    border: 2px solid #1B264F;
-    color: #274690;
-    background: none;
+    border: 2px solid #274690;
+    color: #fff;
+    background: #1B264F;
 }
-
- /* about sectie css */
+/* Zelfde content styling code */
 section{
-    padding: 100px 0;
+    padding: 100px 0;   
 }
-.about{
-    font-family: 'Poppins', sans-serif;
-}
-.about .title{
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -130,7 +132,7 @@ section{
     font-family: 'Ubuntu', sans-serif;
     /* color:#274690; */
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -141,8 +143,7 @@ section{
     transform: translateX(-50%);
     /* background: #1B264F; */
 }
-.about .title::after{
-    content: "Who am I";
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -153,7 +154,15 @@ section{
     transform: translateX(-50%);
     /* background: #1B264F; */
 }
-.about .about-content{
+ /* about sectie css */
+
+.about, .services{
+    font-family: 'Poppins', sans-serif;
+}
+.about .title::after{
+    content: "Who am I";
+}
+.about .about-content, .services .serv-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -200,7 +209,22 @@ section{
     background: none;
 }
 
+/* Service sectie begin */
+.services{
+    color: #fff;
+    background: #302B27;
+}
+.services .title::before{
+    background: #fff;
+}
+.services .title::after{
+    background: #302B27;
+    content: "What I Provide";
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
 
+}
 
 
 
