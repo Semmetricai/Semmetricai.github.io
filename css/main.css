@@ -5,9 +5,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-body{
-    /* background-color: #f5f3f5; */
-}
+/* body{
+    background-color: #f5f3f5;
+} */
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -223,7 +223,40 @@ section .title::after{
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card:hover{
+    background: #274690;
+    /* background: none;
+    border: 2px solid black; */
+  
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: #274690;
+    /* color: orange; */
+    /* Welke kleur de images ? */
+}
+.services .serv-content .card:hover i{
+    color: #fff;
+    transition: color 0.3s ease;
+}
+/* NOTE !!  Background none ? en dan border eromheen */
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
 
