@@ -119,6 +119,15 @@
     background: #1B264F;
 }
 /* Zelfde content styling code */
+.about, .services, .skills{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content, .services .serv-content, .skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 section{
     padding: 100px 0;   
 }
@@ -155,19 +164,10 @@ section .title::after{
     /* background: #1B264F; */
 }
  /* about sectie css */
-
-.about, .services{
-    font-family: 'Poppins', sans-serif;
-}
 .about .title::after{
     content: "Who am I";
 }
-.about .about-content, .services .serv-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
+
 .about .about-content .left{
     width: 45%;
 }
@@ -238,6 +238,7 @@ section .title::after{
 }
 .services .serv-content .card:hover{
     background: #274690;
+    /* background: #576CA8; */
     /* background: none;
     border: 2px solid black; */
   
@@ -259,6 +260,13 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
+ /* Skills section start */
+.skills .title::after{
+    content: "What I Can Do";
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
 
 
 
@@ -359,6 +367,10 @@ section .title::after{
     .about .about-content .right{
         flex: 100%;
     }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 690px){
     .max-width{
@@ -374,6 +386,10 @@ section .title::after{
     }
     .home .home-content a{
         font-size: 20px;
+
+    }
+    .services .serv-content .card{
+        width: 100%;
 
     }
 
