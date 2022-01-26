@@ -108,7 +108,6 @@
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 6px;
-    
     border: 2px solid #1B264F;
     transition: all 0.3s ease;
 
@@ -117,6 +116,7 @@
     border: 2px solid #274690;
     color: #fff;
     background: #1B264F;
+    transform: scale(1.05);
 }
 /* Zelfde content styling code */
 .about, .services, .skills{
@@ -207,6 +207,7 @@ section .title::after{
     border: 2px solid #1B264F;
     color: #274690;
     background: none;
+    transform: scale(1.05);
 }
 
 /* Service sectie begin */
@@ -267,7 +268,19 @@ section .title::after{
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
 
+}
+.skills .skills-content .left .info{
+    display: flex;
+    align-items: center;
+}
 
 
 
