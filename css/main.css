@@ -238,6 +238,7 @@ section .title::after{
     transform: scale(1.05);
 }
 .services .serv-content .card:hover{
+    /* background: #1B264F; */
     background: #274690;
     /* background: #576CA8; */
     /* background: none;
