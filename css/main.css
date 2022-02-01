@@ -119,7 +119,7 @@
     transform: scale(1.05);
 }
 /* Zelfde content styling code */
-.about, .services, .skills, .contact{
+.about, .services, .skills, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content, .services .serv-content, .skills .skills-content, .contact .contact-content{
@@ -393,6 +393,20 @@ section .title::after{
 
 }
 
+/* footer section  */
+footer{
+    background: #333;
+    padding: 20px 20px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: #274690;
+
+}
+footer span a:hover{
+    text-decoration: underline;
+}
 
 
 
@@ -407,8 +421,7 @@ section .title::after{
 
 
 
-
-/* Respnsive start !! */
+/* Respnsive  !! */
 @media (max-width: 1300px){
     .home .max-width{
         margin-left: 0px;
