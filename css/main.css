@@ -71,21 +71,7 @@ html{
     cursor: pointer;
     display: none;
 }
-/* scroll up btn  */
-/* .scroll-up-btn{
-    position: fixed;
-    height: 45px;
-    width: 42px;
-    background: #1B264F;
-    right: 30px;
-    text-align: center;
-    line-height: 45px;
-    color: #fff;
-    z-index: 9999;
-    font-size: 30px;
-    border-radius: 6px;  
-    cursor: pointer;  
-} */
+
 /* Home section  */
 .home{
     display: flex;
@@ -406,9 +392,9 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.contact .right form .button-area button:hover{
+/* .contact .right form .button-area button:hover{
 
-}
+} */
 
 /* footer section  */
 footer{

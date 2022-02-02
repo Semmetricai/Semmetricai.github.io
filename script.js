@@ -15,10 +15,10 @@ $(document).ready(function(){
 
     // coole typ animatie 
     var typed = new Typed(".typing", {
-        strings: ["Developer", "Student", "Placeholder"],
+        strings: ["Developer", /*"Student", "Placeholder"*/],
         typeSpeed: 100,
         backSpeed: 60,
-        loop: true
+        loop: false
 
     })
 });
