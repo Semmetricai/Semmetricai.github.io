@@ -16,7 +16,7 @@ $(document).ready(function(){
     // coole typ animatie 
     var typed = new Typed(".typing", {
         strings: ["Developer", /*"Student", "Placeholder"*/],
-        typeSpeed: 100,
+        typeSpeed: 115,
         backSpeed: 60,
         loop: false
 
