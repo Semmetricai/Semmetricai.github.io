@@ -7,9 +7,18 @@ $(document).ready(function(){
         }
     });
 
-    // toggle menu/navbar script
+    // toggle menu/navbar 
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active")
         $('.menu-btn i').toggleClass("active")
     });
+
+    // coole typ animatie 
+    var typed = new Typed(".typing", {
+        strings: ["Developer", "Student", "Placeholder"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+
+    })
 });
